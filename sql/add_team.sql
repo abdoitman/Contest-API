@@ -1,1 +1,0 @@
-INSERT INTO Teams(TeamID, Name) Values (:teamID , :)
