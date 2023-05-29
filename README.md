@@ -8,13 +8,11 @@ In [server_api.py](https://github.com/abdoitman/Contest-API/blob/main/server_api
 ```console
 uvicorn server_api:app --reload
 ```
-
 ### Game Seeds
 At first to ensure a fair game among all teams, a series of random numbers with a fixed seed are generated in the API that will later be used as a random seed for each game to ensure that all teams play at most 10 **random** games, but **all teams** play the **same** random 10 games. <br>
 
 *For example:* if Team A have played 4 games on the server already, then their next game seed will be the fifth in the list, while Team B is on the second seed because they played only one time before. <br>
 ![3](https://github.com/abdoitman/Contest-API/assets/77892920/1e43164a-578c-482f-87df-752680333544)
-
 ### API
 The API consists of **2 GET** requests and **One POST** request: <br>
 
