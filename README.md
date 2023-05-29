@@ -16,7 +16,7 @@ At first to ensure a fair game among all teams, a series of random numbers with 
 <p align=center> <img src="https://github.com/abdoitman/Contest-API/assets/77892920/3bcfc3ab-8aec-4a72-9126-5cd6073093ee"> </p>
 
 ### API
-The API consists of **2 GET** requests and **One POST** request: <br>
+The API consists of **2 GET** requests and **1 POST** request: <br>
 
   * `.../submit/{team_id}` :
     * At the start of each server submission, any participating team should send a GET request to the API to the random seed of the current trial they're on.
