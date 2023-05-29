@@ -28,4 +28,12 @@ The API consists of **2 GET** requests and **One POST** request: <br>
 <hr>
 
 ## Functions
-The [functions.py](https://github.com/abdoitman/Contest-API/blob/main/functions.py) file contains the necessary functions to communicate between the API and the database.
+The [functions.py](https://github.com/abdoitman/Contest-API/blob/main/functions.py) file contains the necessary functions to communicate between the API and the database which are:<br>
+  * **connect_to_database** : opens the connection to the database.
+  * **set_begin_flag** : sets up a boolean in the database that marks that the team has started a trial.
+  * **began_trial** : check if a team has already started a trial and hasn't completed it yet.
+  * **get_teams** : returns the current teams from the database.
+  * **insert_trial** : inserts a new trial in the DB.
+  * **get_seed** : gets the index at which a team should pull the seed from the list of seeds upon.
+  * **get_trials_submitted** : gets the total number of submissions so far for any team.
+  * **fetch_team_info** : gets the team info.
