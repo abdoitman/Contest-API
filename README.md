@@ -1,5 +1,5 @@
 # Contest API
-This repository containts the API responsible for recieving server submissions, evaluating, and storing scores from the **[Tetris Competition](https://github.com/abdoitman/Tetris-Competition)**. 
+This repository contains the API responsible for receiving server submissions, evaluating, and storing scores from the **[Tetris Competition](https://github.com/abdoitman/Tetris-Competition)**. 
 
 <hr>
 
@@ -31,14 +31,18 @@ The API consists of **2 GET** requests and **1 POST** request: <br>
 
 ## Functions
 The [functions.py](https://github.com/abdoitman/Contest-API/blob/main/functions.py) file contains the necessary functions to communicate between the API and the database which are:<br>
-  * **connect_to_database** : opens the connection to the database.
-  * **set_begin_flag** : sets up a boolean in the database that marks that the team has started a trial.
-  * **began_trial** : check if a team has already started a trial and hasn't completed it yet.
-  * **get_teams** : returns the current teams from the database.
-  * **insert_trial** : inserts a new trial in the DB.
-  * **get_seed** : gets the index at which a team should pull the seed from the list of seeds upon.
-  * **get_trials_submitted** : gets the total number of submissions so far for any team.
-  * **fetch_team_info** : gets the team info.
+  * `connect_to_database` : opens the connection to the database.
+  * `set_begin_flag` : sets up a boolean in the database that marks that the team has started a trial.
+  * `began_trial` : check if a team has already started a trial and hasn't completed it yet.
+  * `get_teams` : returns the current teams from the database.
+  * `insert_trial` : inserts a new trial in the DB.
+  * `get_seed` : gets the index at which a team should pull the seed from the list of seeds upon.
+  * `get_trials_submitted` : gets the total number of submissions so far for any team.
+  * `fetch_team_info` : gets the team info.
+
+Also, it contains 2 other functions: <br>
+  * `check_cheating` : checks if the submitting team has altered the game files.
+  * `calculate_score` : calculate the score of the submitted trial based on the number of cleared lines and the level. 
 
 <hr>
 
