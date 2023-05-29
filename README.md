@@ -13,7 +13,8 @@ At first to ensure a fair game among all teams, a series of random numbers with 
 
 *For example:* if Team A have played 4 games on the server already, then their next game seed will be the fifth in the list, while Team B is on the second seed because they played only one time before. <br>
 
-![3](https://github.com/abdoitman/Contest-API/assets/77892920/1e43164a-578c-482f-87df-752680333544)
+<p align=center> <img src="https://github.com/abdoitman/Contest-API/assets/77892920/3bcfc3ab-8aec-4a72-9126-5cd6073093ee"> </p>
+
 ### API
 The API consists of **2 GET** requests and **One POST** request: <br>
 
