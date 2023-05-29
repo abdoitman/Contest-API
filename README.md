@@ -27,3 +27,7 @@ The API consists of **2 GET** requests and **One POST** request: <br>
     * At the end of each server submission, the game sends the necessary information to the API using this POST request to calculate the score and validate the integrity of the game files on the teams PC. Then, it stores the trial information in the database.
     * NOTE: This request is sent automatically when a team starts a server submission <br>
 
+<hr>
+
+## Functions
+The [functions.py](https://github.com/abdoitman/Contest-API/blob/main/functions.py) file contains the necessary functions to communicate between the API and the database.
