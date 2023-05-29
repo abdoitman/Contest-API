@@ -18,12 +18,12 @@ The API consists of **2 GET** requests and **One POST** request: <br>
 
   * **.../submit/{team_id}** :
     * At the start of each server submission, any participating team should send a GET request to the API to the random seed of the current trial they're on.
-    * NOTE: This request is sent automatically when a team starts a server submission <br>
+    * **NOTE:** This request is sent automatically when a team starts a server submission <br>
   * **.../info/{team_id}** :
     * Any team can access their information at any time using this GET request. Their info will contain their **average score, number of submitted trials, and the score of each past trial**
   * **.../finish/{team_id}/** : 
     * At the end of each server submission, the game sends the necessary information to the API using this POST request to calculate the score and validate the integrity of the game files on the teams PC. Then, it stores the trial information in the database.
-    * NOTE: This request is sent automatically when a team starts a server submission <br>
+    * **NOTE:** This request is sent automatically when a team starts a server submission <br>
 
 <hr>
 
@@ -37,3 +37,10 @@ The [functions.py](https://github.com/abdoitman/Contest-API/blob/main/functions.
   * **get_seed** : gets the index at which a team should pull the seed from the list of seeds upon.
   * **get_trials_submitted** : gets the total number of submissions so far for any team.
   * **fetch_team_info** : gets the team info.
+
+<hr>
+
+## SQL
+In [sql folder](https://github.com/abdoitman/Contest-API/tree/main/sql) lies 2 SQL scripts related to the [creation of the database](https://github.com/abdoitman/Contest-API/blob/main/sql/create_database.sql) and the [creation of the triggers](https://github.com/abdoitman/Contest-API/blob/main/sql/database_logic.sql) in the database. <br>
+
+See the documentaion [here](https://github.com/abdoitman/Contest-API/tree/main/sql).
