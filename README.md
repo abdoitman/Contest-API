@@ -4,7 +4,7 @@ This repository contains the API responsible for receiving server submissions, e
 <hr>
 
 ## Server API
-In [server_api.py](https://github.com/abdoitman/Contest-API/blob/main/server_api.py) file containts the API used to *recieve* and *send* HTML to each participant in the competition. The API was creating using **FastAPI** and deployed locally using **uvicorn**. To run the API *locally* run:
+In [server_api.py](https://github.com/abdoitman/Contest-API/blob/main/server_api.py) file contains the API used to *receive* and *send* HTML to each participant in the competition. The API was creating using **FastAPI** and deployed locally using **uvicorn**. To run the API *locally* run:
 ```console
 uvicorn server_api:app --reload
 ```
@@ -24,13 +24,13 @@ The API consists of **2 GET** requests and **1 POST** request: <br>
   * `.../info/{team_id}` :
     * Any team can access their information at any time using this **GET** request. Their info will contain their **average score, number of submitted trials, and the score of each past trial**
   * `.../finish/{team_id}/` : 
-    * At the end of each server submission, the game sends the necessary information to the API using this **POST** request to calculate the score and validate the integrity of the game files on the teams PC. Then, it stores the trial information in the database.
+    * At the end of each server submission, the game sends the necessary information to the API using this **POST** request to calculate the score and validate the integrity of the game files on the team's PC. Then, it stores the trial information in the database.
     * **NOTE:** This request is sent automatically when a team starts a server submission <br>
 
 <hr>
 
 ## Functions
-The [functions.py](https://github.com/abdoitman/Contest-API/blob/main/functions.py) file contains the necessary functions to communicate between the API and the database which are:<br>
+The [functions.py](https://github.com/abdoitman/Contest-API/blob/main/functions.py) file contains the necessary functions to communicate between the API and the database, which are:<br>
   * `connect_to_database` : opens the connection to the database.
   * `set_begin_flag` : sets up a boolean in the database that marks that the team has started a trial.
   * `began_trial` : check if a team has already started a trial and hasn't completed it yet.
@@ -49,4 +49,4 @@ Also, it contains 2 other functions: <br>
 ## SQL
 In [sql folder](https://github.com/abdoitman/Contest-API/tree/main/sql) lies 2 SQL scripts related to the [creation of the database](https://github.com/abdoitman/Contest-API/blob/main/sql/create_database.sql) and the [creation of the triggers](https://github.com/abdoitman/Contest-API/blob/main/sql/database_logic.sql) in the database. <br>
 
-See the documentaion [here](https://github.com/abdoitman/Contest-API/tree/main/sql).
+See the documentation [here](https://github.com/abdoitman/Contest-API/tree/main/sql).
