@@ -1,2 +1,2 @@
 # Contest-API
-API responsible for receiving submissions from the teams.
+This repo containts the API responsible for recieving the server submissions, evaluating, and storing scores from the **[Tetris Competition](https://github.com/abdoitman/Tetris-Competition)**. 
