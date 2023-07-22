@@ -4,7 +4,7 @@ This repository contains the API responsible for receiving server submissions, e
 <hr>
 
 ## Server API
-In [server_api.py](https://github.com/abdoitman/Contest-API/blob/main/server_api.py) file contains the API used to *receive* and *send* HTML to each participant in the competition. The API was creating using **FastAPI** and deployed locally using **uvicorn**. To run the API *locally* run:
+In [server_api.py](https://github.com/abdoitman/Contest-API/blob/main/server_api.py) file contains the API used to *receive* and *send* HTML to each participant in the competition. The API was created using **FastAPI** and deployed locally using **uvicorn**. To run the API *locally* run:
 ```console
 uvicorn server_api:app --reload
 ```
